@@ -5,7 +5,7 @@ with merged as (
         date_part('year', order_date) as order_year,
         ship_mode,
         gross_item_sales_amount
-    from {{ ref('fct_order_items') }}
+    from {{ ref('cloud_demo_tpch', 'fct_order_items') }}
 )
 
 select
