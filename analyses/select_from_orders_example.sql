@@ -1,5 +1,3 @@
-
-
 SELECT order_key, 
        order_date, 
        {{ standard_account_fields() }} 

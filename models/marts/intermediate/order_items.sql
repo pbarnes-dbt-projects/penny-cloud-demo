@@ -1,7 +1,7 @@
 
 with orders as (
     
-    select * from {{ ref('stg_tpch_orders') }}
+    select * from {{ ref('cloud_demo_tpch', 'stg_tpch_orders') }}
 
 ),
 
