@@ -1,6 +1,6 @@
 {{ config(
-  enabled = false,
-  materialized = view
+  enabled = true,
+  node_color = "#A0A0A0"
 ) }}
 
 with customers as (
