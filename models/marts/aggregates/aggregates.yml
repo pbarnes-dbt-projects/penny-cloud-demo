@@ -30,7 +30,7 @@ exposures:
       Did someone say "exponential growth"?
     
     depends_on:
-      - ref('stg_tpch_orders')
+      - ref('cloud_demo_tpch', 'stg_tpch_orders')
       - ref('dim_suppliers')
       
     owner:
