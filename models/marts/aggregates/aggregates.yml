@@ -32,8 +32,9 @@ exposures:
     depends_on:
       - ref('cloud_demo_tpch', 'stg_tpch_orders')
       - ref('dim_suppliers')
+      - ref('dim_customers')
+      - ref('dim_parts')
       
     owner:
-      name: Isabela 
-      email: isabela@dbtlabs.com
-
+      name: Penny Barnes
+      email: penny.barnes@dbtlabs.com
