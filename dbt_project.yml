@@ -43,20 +43,8 @@ vars:
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
 models:
-  tpch:
+  penny_tpch_demo:
     staging:
-      +materialized: view
-
+      materialized: view
     marts:
-      core:
-        materialized: table
-  
-  snowflake_spend:
-    enabled: true
-      
-seeds:
-  tpch:
-    snowflake_contract_rates:
-      +column_types:
-        effective_date: DATE
-        rate: NUMBER   
+      materialized: table

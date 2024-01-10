@@ -1,1 +1,1 @@
-select * from {{ ref('cloud_demo_tpch', 'fct_orders')}}
+select * from {{ ref('muffin_shop', 'customers')}}

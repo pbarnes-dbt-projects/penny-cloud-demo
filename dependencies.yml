@@ -10,3 +10,4 @@ packages:
 
 projects:
   - name: cloud_demo_tpch
+  - name: muffin_shop
