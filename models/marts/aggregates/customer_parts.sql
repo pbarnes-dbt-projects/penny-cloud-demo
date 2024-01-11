@@ -4,7 +4,7 @@
 ) }}
 
 with customers as (
-    select * from {{ ref('customers')}}
+    select * from {{ ref('dim_customers')}}
 
 ),
 
@@ -13,4 +13,4 @@ order_items as (
 
 )
 
-select customer_key, count(*) as parts_ordered, listagg(part_key, ', ') from order_items where order_items.order_status_code = 'F' group by customer_key
+select customer_key, count(*) as count_of_parts_ordered, listagg(part_key, ', ') as id_of_parts_ordered from order_items where order_items.order_status_code = 'F' group by customer_key
