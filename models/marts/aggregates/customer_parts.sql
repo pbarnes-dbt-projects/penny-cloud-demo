@@ -1,6 +1,5 @@
 {{ config(
-  enabled = true,
-  node_color = "#A0A0A0"
+  enabled = false
 ) }}
 
 with customers as (
@@ -14,3 +13,6 @@ order_items as (
 )
 
 select customer_key, count(*) as count_of_parts_ordered, listagg(part_key, ', ') as id_of_parts_ordered from order_items where order_items.order_status_code = 'F' group by customer_key
+
+
+
