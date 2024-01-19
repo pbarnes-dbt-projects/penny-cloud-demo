@@ -14,13 +14,13 @@ from
     merged
     -- have to manually map strings in the pivot operation
     pivot(sum(gross_item_sales_amount) for ship_mode in (
-        'AIR',
         'REG AIR',
-        'FOB',
         'RAIL',
-        'MAIL',
         'SHIP',
-        'TRUCK'
+        'TRUCK',
+        'FOB',
+        'MAIL',
+        'AIR'
     )) as p 
 
 order by order_year
