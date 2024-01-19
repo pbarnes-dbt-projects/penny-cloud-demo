@@ -16,6 +16,9 @@ models:
     columns:
       - name: order_year
         description: year of the order
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_increasing
       
   - name: monthly_gross_revenue
     columns:
