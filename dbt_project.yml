@@ -29,6 +29,8 @@ vars:
   fct_order_items: 'mock_source__fct_order_items' # this is a map for unit testing
   vars:
   'dbt_date:time_zone': 'America/New_York'
+  exclude_paths_from_project: ["/models/marts/aggregates/"]
+
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -39,3 +41,5 @@ models:
       materialized: view
     marts:
       materialized: table
+
+
