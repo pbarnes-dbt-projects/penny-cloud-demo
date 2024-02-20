@@ -3,3 +3,4 @@ select
     , sum(fct_order_items.gross_item_sales_amount) as gross_revenue
 from {{ ref('cloud_demo_tpch', 'fct_order_items') }}
 group by 1
+order by 1
