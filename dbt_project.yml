@@ -5,6 +5,8 @@ name: 'penny_cloud_demo'
 version: '1.0.0'
 config-version: 2
 
+#Branching! 
+
 dbt-cloud: 
     project-id: 329809
 
