@@ -29,7 +29,7 @@ final as (
         customer.name,
         customer.address,
         {# nation.nation_key as nation_key, #}
-        nation.name as nation,
+        nation.name as name_of_nation,
         {# region.region_key as region_key, #}
         region.name as region,
         customer.phone_number,
