@@ -31,7 +31,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 vars:
   start_date: '1999-01-01'
   fct_order_items: 'mock_source__fct_order_items' # this is a map for unit testing
-  vars:
+  surrogate_key_treat_nulls_as_empty_strings: true #turn on legacy behavior
   'dbt_date:time_zone': 'America/New_York'
   exclude_paths_from_project: ["/models/marts/aggregates/"]
 
