@@ -5,9 +5,6 @@
     )
 }}
 
--- commit1 from vscode
--- commit1 from vscode
--- commit1 from vscode
 
 with customer as (
 

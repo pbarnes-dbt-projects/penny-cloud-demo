@@ -134,6 +134,9 @@ models:
           - not_null
       - name: name
         description: region name
+        tests:
+          - accepted_values:
+              values: ['AFRICA','MIDDLE EAST','ASIA','EUROPE']
       - name: comment
         description: '{{ doc("comment") }}'
 

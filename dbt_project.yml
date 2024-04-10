@@ -36,8 +36,14 @@ vars:
   surrogate_key_treat_nulls_as_empty_strings: true #turn on legacy behavior
 
 
-# Configuring models
-# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+tests:
+  penny_cloud_demo:
+    staging:
+      +severity:  warn
+    marts:
+      +severity:  error
+
 
 models:
   penny_cloud_demo:
