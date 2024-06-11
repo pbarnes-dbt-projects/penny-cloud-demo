@@ -21,7 +21,7 @@ SELECT
     LISTAGG(DISTINCT orders.customer_key, ', ') customers,
 FROM
     order_items
-INNER JOIN orders ON order_items.order_key = orders.order_key
+INNER JOIN ordersA ON order_items.order_key = orders.order_key
 INNER JOIN suppliers ON order_items.supplier_key = suppliers.supplier_key
 GROUP BY month, supplier_name
 ORDER BY month, supplier_name
