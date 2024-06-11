@@ -1,0 +1,1 @@
+select cats from {{ ref("muffin_shop", "customers") }} limit 1
