@@ -1,1 +1,1 @@
-select * from {{ ref("muffin_shop", "customers") }} limit 1
+select * from {{ ref("dim_parts") }} limit 1
