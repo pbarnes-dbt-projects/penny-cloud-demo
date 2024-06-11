@@ -1,1 +1,1 @@
-select cats from {{ ref("muffin_shop", "customers") }} limit 1
+select 1 from {{ ref("muffin_shop", "customers") }} limit 1
