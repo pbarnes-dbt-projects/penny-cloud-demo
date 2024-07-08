@@ -4,11 +4,6 @@
         transient=false
     )
 }}
-
--- commit1 from vscode
--- commit1 from vscode
--- commit1 from vscode
-
 with customer as (
 
     select * from {{ ref('stg_tpch_customers') }}
@@ -28,6 +23,7 @@ final as (
         customer.customer_key,
         customer.name,
         customer.address,
+        customer.industry,
         {# nation.nation_key as nation_key, #}
         nation.name as nation,
         {# region.region_key as region_key, #}

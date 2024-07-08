@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: dim_customers
+    latest_version: 1
     description: Customer dimensions table
     columns:
       - name: customer_key
@@ -17,6 +18,8 @@ models:
               severity: warn
       - name: name
         description: customer id
+      - name: industry
+        description: The industry the customer's business operates in
       - name: address
         description: address of the customer
       - name: nation
@@ -27,6 +30,14 @@ models:
         description: '{{ doc("account_balance") }}'
       - name: market_segment
         description: market segment of the customer
+    versions:
+      - v: 1
+        config:
+          alias: dim_customers_v1
+      - v: 2
+        columns:
+          - include: all 
+            exclude: [industry]
 
 
   - name: dim_parts
