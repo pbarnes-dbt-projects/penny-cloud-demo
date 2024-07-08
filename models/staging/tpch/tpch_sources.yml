@@ -4,8 +4,8 @@ version: 2
 sources:
   - name: tpch
     description: Welcome to the dbt Labs demo dbt project! We use the [TPCH dataset](https://docs.snowflake.com/en/user-guide/sample-data-tpch.html) to create a sample project to emulate what a production project might look like!
-    database: raw
-    schema: tpch_sf001
+    database: penny_sandbox
+    schema: dbt_pbarnes_sources
     tables:
 
       - name: customer
@@ -26,6 +26,9 @@ sources:
             description: foreign key to stg_tpch_nations
           - name: c_industry
             description: the industry of the customer
+            tests:
+              - not_null:
+                  severity: warn
           - name: c_phone
             description: phone number of the customer
           - name: c_acctbal
