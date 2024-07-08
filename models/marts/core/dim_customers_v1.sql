@@ -1,7 +1,8 @@
 {{
     config(
         materialized = 'table',
-        transient=false
+        transient=false,
+        enabled=false
     )
 }}
 with customer as (
