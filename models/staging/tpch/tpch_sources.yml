@@ -24,6 +24,8 @@ sources:
             description: address of the customer
           - name: c_nationkey
             description: foreign key to stg_tpch_nations
+          - name: c_industry
+            description: the industry of the customer
           - name: c_phone
             description: phone number of the customer
           - name: c_acctbal

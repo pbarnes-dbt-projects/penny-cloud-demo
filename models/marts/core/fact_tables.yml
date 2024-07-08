@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fct_monthly_supplier_inventory
+    description: Monthly roll-up table for specific supplier relationships
+    columns:
+      - name: supplier_name
+      - name: month
+        description: First day of the month of record
+      - name: supplier_sales
+        description: |
+          Sum of the amount of discounted sales made in the month of record from productgs procured through this supplier
+      - name: inventory_sold
+        description: |
+          Sum of total inventory (all products) procured through this supplier sold during the month of record
+      - name: parts_sold_distinct
+        description: |
+          Count of distinct parts sold that were procured through this supplier during the month of record
+      - name: parts_sold
+        description: |
+          Specific list of parts sold that were procured through this supplier during the month of record
+      - name: customers_count_distinct
+        description: Count of distinct customers that purchased parts procured through this supplier during the month of record
+      - name: customers
+        description: List of distinct customers that purchased parts procured through this supplier during the month of record
+
