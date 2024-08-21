@@ -2,11 +2,11 @@ Welcome to Penny's dbt cloud demo project! I use the [TPCH dataset](https://docs
 In the future, we'll experiment with shadowtraffic data for alternative workflows!
 
 
- ____  ____  _____        ____  _     ____  _     ____ 
-/  _ \/  _ \/__ __\      /   _\/ \   /  _ \/ \ /\/  _ \
-| | \|| | //  / \        |  /  | |   | / \|| | ||| | \|
-| |_/|| |_\\  | |        |  \__| |_/\| \_/|| \_/|| |_/|
-\____/\____/  \_/        \____/\____/\____/\____/\____/
-                                                       
+______                          _
+|  _  \                        | |
+| | | |  ___  _ __ ___    ___  | |
+| | | | / _ \| '_ ` _ \  / _ \ | |
+| |/ / |  __/| | | | | || (_) ||_|
+|___/   \___||_| |_| |_| \___/ (_)
 
 ## Special demos
