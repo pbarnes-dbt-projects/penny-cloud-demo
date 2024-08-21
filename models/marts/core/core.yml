@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: dim_customers
-    latest_version: 1
+    latest_version: 2
     description: Customer dimensions table
     columns:
       - name: customer_key
@@ -34,6 +34,9 @@ models:
       - v: 1
         config:
           alias: dim_customers_v1
+          description: deprecated
+          deprecation_date: 2024-07-01
+          
       - v: 2
         columns:
           - include: all 

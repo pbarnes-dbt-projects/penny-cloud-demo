@@ -1,3 +1,6 @@
+{{ config(
+  enabled=false
+) }}
 
 with orders as (
     
