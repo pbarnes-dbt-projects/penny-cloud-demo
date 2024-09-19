@@ -3,4 +3,4 @@
 ) }}
 
 
-select 1 from {{ ref("dim_parts") }} limit 1
+select * from {{ ref("dim_parts") }} limit 1
