@@ -10,6 +10,8 @@ models:
         tests:
           - unique
           - not_null
+        constraints:
+          - type: primary_key
       - name: region
         description: region name
         tests:
