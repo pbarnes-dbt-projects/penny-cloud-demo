@@ -4,6 +4,10 @@ models:
   - name: dim_customers
     latest_version: 2
     description: Customer dimensions table
+    config:
+      contract:
+        enforced: true
+
     columns:
       - name: customer_key
         description: Primary key on the customers table
