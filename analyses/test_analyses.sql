@@ -1,1 +1,0 @@
-select * from {{ ref('muffin_shop', 'customers')}}

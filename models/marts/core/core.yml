@@ -4,12 +4,18 @@ models:
   - name: dim_customers
     latest_version: 2
     description: Customer dimensions table
+    config:
+      contract:
+        enforced: true
+
     columns:
       - name: customer_key
         description: Primary key on the customers table
         tests:
           - unique
           - not_null
+        constraints:
+          - type: primary_key
       - name: region
         description: region name
         tests:
